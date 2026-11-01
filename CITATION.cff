@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "horsefold: simulating accuracy inflation from bone-level splits and pre-split feature selection in racehorse fracture radiomics"
+type: software
+authors:
+  - alias: naritaroad
+version: 0.1.0
+repository-code: "https://github.com/naritaroad/horsefold"
+license: MIT
+keywords:
+  - racehorse
+  - data leakage
+  - cross-validation
+  - grouped data
+  - radiomics
+references:
+  - type: article
+    title: "Radiomics Modeling of Catastrophic Proximal Sesamoid Bone Fractures in Thoroughbred Racehorses Using μCT"
+    authors:
+      - family-names: Basran
+        given-names: Parminder S.
+      - family-names: McDonough
+        given-names: Sean
+      - family-names: Palmer
+        given-names: Scott
+      - family-names: Reesink
+        given-names: Heidi L.
+    journal: Animals
+    volume: 12
+    issue: 21
+    start: 3033
+    year: 2022
+    doi: 10.3390/ani12213033

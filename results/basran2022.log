@@ -1,0 +1,26 @@
+2026-11-02 03:47:39 +0800  horsefold run --scale 1.0 --jobs -1 --out results/basran2022.json
+2026-11-02 03:47:39 +0800  python 3.14.10 on Windows AMD64, 24 threads
+2026-11-02 03:47:40 +0800  leak rate: {'exact_same_group': {'all': 0.826, 'positive': 0.703, 'negative': 0.933}, 'same_group': 0.826, 'same_cluster': 0.698}
+2026-11-02 03:48:29 +0800  E1 d=0.0: 500 replicates, 49 s
+2026-11-02 03:49:03 +0800  E1 d=1.0: 500 replicates, 34 s
+2026-11-02 03:49:04 +0800  E2 r=0.0: 300 replicates, 1 s
+2026-11-02 03:49:04 +0800  E2 r=0.3: 300 replicates, 1 s
+2026-11-02 03:49:05 +0800  E2 r=0.5: 300 replicates, 1 s
+2026-11-02 03:49:06 +0800  E2 r=0.7: 300 replicates, 1 s
+2026-11-02 03:49:07 +0800  E2 r=0.9: 300 replicates, 1 s
+2026-11-02 03:49:07 +0800  E3 d=0.0: 300 replicates, 0 s
+2026-11-02 03:49:08 +0800  E3 d=0.25: 300 replicates, 0 s
+2026-11-02 03:49:08 +0800  E3 d=0.5: 300 replicates, 0 s
+2026-11-02 03:49:09 +0800  E3 d=0.75: 300 replicates, 0 s
+2026-11-02 03:49:09 +0800  E3 d=1.0: 300 replicates, 0 s
+2026-11-02 03:49:10 +0800  E3 d=1.25: 300 replicates, 0 s
+2026-11-02 03:49:10 +0800  E3 d=1.5: 300 replicates, 0 s
+2026-11-02 03:49:11 +0800  E4 missing: 300 replicates, 1 s
+2026-11-02 03:49:12 +0800  E4 limb: 300 replicates, 1 s
+2026-11-02 03:49:13 +0800  E4 type: 300 replicates, 1 s
+2026-11-02 03:49:15 +0800  E5 d=0.0: 200 replicates, 2 s
+2026-11-02 03:49:17 +0800  E5 d=1.0: 200 replicates, 2 s
+2026-11-02 03:52:33 +0800  E6 d=0.0: 200 replicates, 196 s
+2026-11-02 03:55:00 +0800  E6 d=1.0: 200 replicates, 148 s
+2026-11-02 03:55:00 +0800  versions: {'numpy': '2.5.4', 'scikit-learn': '1.9.1', 'imbalanced-learn': '0.14.2', 'joblib': '1.6.0'}
+2026-11-02 03:55:00 +0800  wrote results/basran2022.json; total 441 s

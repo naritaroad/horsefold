@@ -1,0 +1,58 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "horsefold"
+dynamic = ["version"]
+description = "Monte Carlo simulation of how much accuracy inflates when racehorse bones, not horses, are split into folds, or features are selected before the split"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.12"
+authors = [{ name = "naritaroad" }]
+keywords = ["racehorse", "data leakage", "cross-validation", "grouped data", "simulation", "machine learning", "radiomics"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Education",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy>=2.0",
+    "scikit-learn>=1.7",
+    "imbalanced-learn>=0.14",
+    "joblib>=1.4",
+]
+
+[project.urls]
+Homepage = "https://github.com/naritaroad/horsefold"
+Issues = "https://github.com/naritaroad/horsefold/issues"
+Changelog = "https://github.com/naritaroad/horsefold/blob/main/CHANGELOG.md"
+
+[project.optional-dependencies]
+plot = ["matplotlib>=3.9"]
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.15", "matplotlib>=3.9"]
+
+[project.scripts]
+horsefold = "horsefold.cli:main"
+
+[tool.hatch.version]
+path = "src/horsefold/__init__.py"
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "NPY"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
